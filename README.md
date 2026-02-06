@@ -1,29 +1,38 @@
-# SauceLabs E2E Automation Framework 🛒
+SauceLabs E2E Automation Framework 🛒
+Este proyecto es un framework de automatización de pruebas de extremo a extremo (E2E) para la página SauceDemo, desarrollado con un enfoque profesional y escalable utilizando herramientas modernas.
 
-Este proyecto es un framework de automatización de pruebas de extremo a extremo (E2E) para la página [SauceDemo](https://www.saucedemo.com/), desarrollado con un enfoque profesional y escalable.
+🛠️ Tech Stack
+Framework: Cypress
 
-## 🛠️ Tech Stack
-* **Framework:** [Cypress](https://www.cypress.io/)
-* **Lenguaje:** [TypeScript](https://www.typescriptlang.org/)
-* **Patrón de Diseño:** Page Object Model (POM)
-* **Gestión de Proyecto:** Jira (Kanban)
-* **CI/CD:** GitHub Actions (Próximamente)
+Lenguaje: TypeScript
 
-## 🏗️ Estructura del Proyecto
-* `cypress/e2e`: Scripts de prueba.
-* `cypress/pages`: Objetos de página (POM).
-* `cypress/fixtures`: Datos estáticos de prueba (JSON).
+Patrón de Diseño: Page Object Model (POM)
 
-## 🚀 Instalación y Uso
-1. Clonar el repositorio:
-   ```bash
-   git clone [https://github.com/TU_USUARIO/saucedemo-cypress-typescript.git](https://github.com/TU_USUARIO/saucedemo-cypress-typescript.git)
-2.Instalar dependencias:
-  ```bash
-  npm install
-3.Ejecutar pruebas en modo interfaz:
-  ```bash
-  npx cypress open
-4.Ejecutar pruebas en modo headless (consola):
-  ```bash
-  npx cypress run
+Gestión de Proyecto: Jira (Tablero Kanban)
+
+CI/CD: GitHub Actions (Próximamente)
+
+🏗️ Estructura del Proyecto
+cypress/e2e: Contiene los scripts de prueba (test cases).
+
+cypress/pages: Contiene los objetos de página (clases POM).
+
+cypress/fixtures: Archivos de datos estáticos (JSON).
+
+🚀 Instalación y Uso
+Clonar el repositorio:
+
+Bash
+git clone https://github.com/TU_USUARIO/saucedemo-cypress-typescript.git
+Instalar dependencias:
+
+Bash
+npm install
+Ejecutar pruebas (Interfaz Gráfica):
+
+Bash
+npx cypress open
+Ejecutar pruebas (Consola / Headless):
+
+Bash
+npx cypress run
