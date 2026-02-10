@@ -1,36 +1,51 @@
-# SauceLabs E2E Automation Framework 🛒
+# SauceDemo Automation Assessment - Psynth 🛒
 
-Este proyecto es un framework de automatización de pruebas de extremo a extremo (E2E) para la página https://www.saucedemo.com/, desarrollado con un enfoque profesional y escalable.
+This repository contains a professional E2E automation framework for the SauceDemo application, developed as part of the QA Engineer technical assessment for **Psynth**.
 
 ## 🛠️ Tech Stack
-* Framework: Cypress
-* Lenguaje: TypeScript
-* Patrón de Diseño: Page Object Model (POM)
-* Gestión de Proyecto: Jira (Tablero Kanban)
-* CI/CD: GitHub Actions (Próximamente)
+* **Framework:** Cypress 15+
+* **Language:** TypeScript
+* **Design Pattern:** Page Object Model (POM)
+* **CI/CD:** GitHub Actions
+* **Reporting:** Artifacts (Videos & Screenshots) integrated into GitHub Actions
 
-## 🏗️ Estructura del Proyecto
-* cypress/e2e       → Contiene los scripts de prueba.
-* cypress/pages     → Contiene los objetos de página (clases POM).
-* cypress/fixtures  → Archivos de datos estáticos (JSON).
+## 📂 Project Structure
+* `cypress/e2e/`: Test suites (Login and Purchase flows).
+* `cypress/pages/`: Page Object classes.
+* `cypress/fixtures/`: Static test data (if applicable).
+* `.github/workflows/`: CI/CD pipeline configuration.
+* `TEST_PLAN.md`: Strategic test planning and test cases.
+* `BUG_REPORT.md`: Detailed bug reporting for detected issues.
 
-## 🚀 Instalación y Uso
+## 🚀 Getting Started
 
-1. Clonar el repositorio:
-git clone https://github.com/Eaqv/saucedemo-cypress-typescript.git
+### Prerequisites
+* Node.js (v20 or higher recommended)
+* NPM
+### Installation
+1. Clone the repository.
+2. Install dependencies:
+   npm install
+3. Running Tests   
 
-2. Instalar dependencias:
-npm install
+   -Headless mode (Console):
+   npm run test-
 
-3. Ejecutar pruebas (Interfaz Gráfica):
-npx cypress open
+   -Interactive mode (Cypress Runner):
+   npm run cy:open
 
-4. Ejecutar pruebas (Consola / Headless):
-npx cypress run
+## CI/CD Integration 📈 
+This project uses GitHub Actions. Every push or pull request to the main branch triggers the full test suite.
 
-## 📌 Notas
-- Asegúrate de tener Node.js instalado (versión recomendada: LTS).
-- El framework está preparado para escalar y agregar integración continua.
+- Artifacts: Videos and screenshots are automatically uploaded upon completion of the pipeline.
 
----
-Proyecto de automatización E2E con buenas prácticas y enfoque profesional.
+### Develop by Edgar Alejandro Quintero Vivas
+
+
+
+
+
+
+
+
+
