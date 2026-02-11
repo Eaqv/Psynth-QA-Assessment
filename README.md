@@ -25,11 +25,11 @@ This repository contains a professional E2E automation framework for the SauceDe
 ### Installation
 1. Clone the repository.
 2. Install dependencies:
-   npm install
+   npm ci
 3. Running Tests   
 
    -Headless mode (Console):
-   npm run test-
+   npm run test
 
    -Interactive mode (Cypress Runner):
    npm run cy:open

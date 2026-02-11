@@ -1,5 +1,5 @@
 {
-  "name": "saucedemo-cypress-typescript",
+  "name": "psynth-qa-assessment",
   "version": "1.0.0",
   "description": "E2E Automation Challenge for Psynth using Cypress",
   "main": "index.js",

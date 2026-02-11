@@ -10,11 +10,32 @@ This assessment covers the core E2E journey of an e-commerce user, from authenti
 | ID | Priority | Description | Type |
 |:---|:---|:---|:---|
 | TC-01 | High | Successful login with `standard_user` | Happy Path |
+### Detailed Test Case Example: TC-01 (Happy Path Login)
+* **Pre-condition:** User is on the Login page.
+* **Steps:**
+  1. Enter 'standard_user'.
+  2. Enter 'secret_sauce'.
+  3. Click Login button.
+* **Expected Result:** Redirected to /inventory and "Products" header is visible.
 | TC-02 | High | Add multiple items to cart and verify badge count | Happy Path |
 | TC-03 | High | Complete full checkout flow (Checkout: Complete) | Happy Path |
+### Detailed Test Case Example: TC-03 (Happy Path Login)
+* **Pre-condition:** User is on the Login page.
+* **Steps:**
+  1. Enter 'standard_user'.
+  2. Enter 'secret_sauce'.
+  3. Click Login button.
+* **Expected Result:** Redirected to /inventory and "Products" header is visible.
 | TC-04 | High | Login failure with `locked_out_user` | Negative |
 | TC-05 | Medium | Attempt checkout with missing information (First/Last name) | Edge Case |
 | TC-06 | Medium | Validate Inventory UI consistency: `standard_user` vs `problem_user` | Cross-user |
+### Detailed Test Case Example: TC-06 (Cross-user)
+* **Pre-condition:** User is on the Login page.
+* **Steps:**
+  1. Enter 'standard_user'.
+  2. Enter 'secret_sauce'.
+  3. Click Login button.
+* **Expected Result:** Redirected to /inventory and "Products" header is visible.
 | TC-07 | Medium | Remove items from cart and verify badge update | Happy Path |
 | TC-08 | Low | Reset App State from the Burger Menu | Functional |
 | TC-09 | Medium | Attempt login with invalid credentials | Negative |

@@ -1,24 +1,24 @@
 import { loginPage } from '../pages/LoginPage';
 import { productsPage } from '../pages/ProductsPage';
-import { cartPage } from '../pages/CartPage'; // <--- Nueva importación
+import { cartPage } from '../pages/CartPage';
 import { checkoutPage } from '../pages/CheckoutPage';
 
-describe('Flujo de Compra E2E', () => {
+describe('E2E Purchase Flow', () => {
     beforeEach(() => {
-        loginPage.visitar();
+        loginPage.visit();
         loginPage.login('standard_user', 'secret_sauce');
     });
 
-    it('Debería agregar un producto al carrito exitosamente', () => {
+    it('should add a product to the cart successfully', () => {
         productsPage.addItemToCart(0);
         productsPage.getCartBadge().should('have.text', '1');
     });
 
-    it('Debería completar una compra de principio a fin', () => {
+    it('should complete a full purchase flow from end to end', () => {
         productsPage.addItemToCart(0);
         productsPage.goToCart();
-        cartPage.verifyItemInCart(); // <--- Uso del POM
-        cartPage.clickCheckout();    // <--- Uso del POM
+        cartPage.verifyItemInCart();
+        cartPage.clickCheckout();
 
         checkoutPage.fillInformation('Alejandro', 'Test', '12345');
         checkoutPage.clickContinue();
@@ -26,10 +26,10 @@ describe('Flujo de Compra E2E', () => {
         checkoutPage.verifyOrderComplete();
     });
 
-    it('Debería mostrar error si faltan datos en el checkout (Edge Case)', () => {
+    it('should show error if missing data in checkout (Edge Case)', () => {
         productsPage.addItemToCart(0);
         productsPage.goToCart();
-        cartPage.clickCheckout();    // <--- Uso del POM
+        cartPage.clickCheckout();
 
         checkoutPage.clickContinue();
         cy.get('[data-test="error"]').should('be.visible');
